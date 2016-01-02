@@ -21,7 +21,12 @@ h1 {
 
 .container {
   margin: 0 auto;
-  width: 800px;
+  width: 90%;
+  max-width: 800px;
+}
+
+canvas{
+  width: 100%;
 }
 
 .manifesto{
@@ -69,7 +74,5 @@ button{
   padding: 10px;
   border: 0;
   margin-bottom: 40px;
-
+  cursor: pointer;
 }
-
-
