@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Privacy Matters</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Md Shahbaz Alam">
+    <meta name="author" content="Md Shahbaz Alam | Trishul Goel">
     <meta name="description" content="Celebrate privacy month">
     <meta property="og:title" content="Privacy Month"/>
     <meta property="og:site_name" content="Privacy month"/>
@@ -14,6 +14,14 @@
   </head>
 
   <body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1042875895763729";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     <h1>PRIVACY MATTERS !!!</h1>
     <div class="container">
       <div class="manifesto">
@@ -24,7 +32,9 @@
       <p style="font-size:14px;line-height:3;text-align:center">Upload your profile picture to generate one like the shown below. Change your profile picture to support and promote <b>#privacymonth</b></p>
       <div class="transform-app">
         <input type="file" id="fileElem" class="hidden">
-        <button class="pure-button pure-button-primary" id="select-photo">Select profile photo</button><br>
+        <button class="pure-button pure-button-primary" id="select-photo">Select profile photo</button>
+        <div class="fb-share-button" data-href="http://janhitsoochna.com/" data-layout="button_count"></div>
+        <br>
         <canvas id="canvas" class="magic pure-img" width="800" height="800"></canvas><br>
         <a href="#" id="download-btn" download="profile-pic.png"><button class="pure-button download-btn">Download</button></a>
       </div>
