@@ -7,6 +7,12 @@ body {
   margin: 0;
 }
 
+p{
+  font-size:14px;
+  line-height:20px;
+  text-align:center
+}
+
 .footer {
  padding: 10px 0;
  background-color: #f5f5f5;
@@ -21,7 +27,12 @@ h1 {
 
 .container {
   margin: 0 auto;
-  width: 800px;
+  width: 90%;
+  max-width: 800px;
+}
+
+canvas{
+  width: 100%;
 }
 
 .manifesto{
@@ -69,7 +80,5 @@ button{
   padding: 10px;
   border: 0;
   margin-bottom: 40px;
-
+  cursor: pointer;
 }
-
-
